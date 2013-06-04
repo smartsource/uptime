@@ -1,9 +1,9 @@
 mongodb:
-  server:   ds027758.mongolab.com:27758
+  server:   ds027758.mongolab.com
   database: uptime
   user:     root
   password: root
-  connectionString: mongodb://root:root@ds027758.mongolab.com:27758/uptime      # alternative to setting server, database, user and password separately
+  connectionString: mongodb://root:root@ds027758.mongolab.com:27758/uptime
 
 monitor:
   name:                   origin
@@ -20,7 +20,7 @@ analyzer:
 autoStartMonitor: true
 
 server:
-  port:     8082
+  port:     80
 
 email:
   method:      SMTP  # possible methods are SMTP, SES, or Sendmail
@@ -37,6 +37,6 @@ email:
   message:           
     from:            # The message sender, e.g. 'Fred Foo <foo@blurdybloop.com>'
     to:              # The message recipient, e.g. 'bar@blurdybloop.com, baz@blurdybloop.com'
-  dashboardUrl: 'http://localhost:8082'
+  dashboardUrl: 'http://ssmuptime.azurewebsites.net'
 
 verbose: true # only used in dev
